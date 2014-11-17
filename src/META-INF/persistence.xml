@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+<persistence-unit name="Project">
+
+<provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+    
+             <class>com.entity.Quotation</class>
+             <class>com.entity.ModelColors</class>
+             <class>com.entity.Login</class>
+             <class>com.entity.Enquiry</class>
+             <class>com.entity.Model</class>
+             <class>com.entity.Offer</class>
+             <class>com.entity.ProspectiveCustomer</class>
+             <class>com.entity.Car</class>
+             <class>com.entity.Customer</class>
+             <class>com.entity.Employee</class>
+             <class>com.entity.LoadManagement</class>
+             
+             
+             
+             
+             
+<properties>
+
+<property name="toplink.jdbc.url" value="jdbc:oracle:thin:@10.122.130.40:1521:Georli01"/>
+<property name="toplink.jdbc.user" value="t133727"/>
+<property name="toplink.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="toplink.jdbc.password" value="infy"/>
+<property name="toplink.ddl-generation" value="create-tables"/>
+<property name="toplink.jdbc.read-connections.max" value="1"/>
+<property name="toplink.jdbc.read-connections.min" value="1"/>
+<property name="toplink.jdbc.write-connections.max" value="1"/>
+<property name="toplink.jdbc.write-connections.min" value="1"/>
+<property name="toplink.logging.level" value="SEVERE" />
+
+</properties>
+    
+</persistence-unit>
+	
+</persistence>
